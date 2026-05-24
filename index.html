@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday ❤️</title>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right,#ff9a9e,#fad0c4);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.card{
+    background:white;
+    width:90%;
+    max-width:700px;
+    padding:30px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    animation:fadeIn 1.5s ease;
+}
+
+h1{
+    color:#ff4d6d;
+    font-size:45px;
+}
+
+p{
+    color:#444;
+    font-size:18px;
+    line-height:1.8;
+}
+
+img{
+    width:220px;
+    height:220px;
+    border-radius:20px;
+    object-fit:cover;
+    margin-top:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+button{
+    margin-top:25px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:#ff4d6d;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#e63956;
+}
+
+#message{
+    display:none;
+    margin-top:20px;
+    color:#ff4d6d;
+    font-weight:bold;
+    font-size:22px;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>Happy Birthday My Love 🎂❤️</h1>
+
+<p>
+You are the best thing that ever happened to me. ✨ <br><br>
+
+Thank you for always making me smile, caring for me,
+and standing by my side through everything. 💖 <br><br>
+
+I pray this year brings you happiness, success,
+good health, and all your dreams come true. 🌸 <br><br>
+
+No matter what happens, you will always be
+someone very special to my heart. 🥹❤️
+</p>
+
+<!-- Replace with your photo -->
+<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9" alt="photo">
+
+<br>
+
+<button onclick="showWish()">Open Surprise 🎁</button>
+
+<div id="message">
+    Forever yours 💌💕
+</div>
+
+</div>
+
+<script>
+function showWish(){
+    document.getElementById("message").style.display = "block";
+}
+</script>
+
+</body>
+</html>
